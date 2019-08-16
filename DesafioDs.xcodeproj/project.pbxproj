@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DC744EB2306314800E6D762 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC744EA2306314800E6D762 /* AppDelegate.m */; };
+		1DC744EE2306314800E6D762 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC744ED2306314800E6D762 /* ViewController.m */; };
+		1DC744F12306314800E6D762 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DC744EF2306314800E6D762 /* Main.storyboard */; };
+		1DC744F42306314800E6D762 /* DesafioDs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DC744F22306314800E6D762 /* DesafioDs.xcdatamodeld */; };
+		1DC744F62306314A00E6D762 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DC744F52306314A00E6D762 /* Assets.xcassets */; };
+		1DC744F92306314A00E6D762 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DC744F72306314A00E6D762 /* LaunchScreen.storyboard */; };
+		1DC744FC2306314A00E6D762 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC744FB2306314A00E6D762 /* main.m */; };
+		1DC745062306314A00E6D762 /* DesafioDsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC745052306314A00E6D762 /* DesafioDsTests.m */; };
+		1DC745112306314A00E6D762 /* DesafioDsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC745102306314A00E6D762 /* DesafioDsUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DC745022306314A00E6D762 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DC744DE2306314800E6D762 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DC744E52306314800E6D762;
+			remoteInfo = DesafioDs;
+		};
+		1DC7450D2306314A00E6D762 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DC744DE2306314800E6D762 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DC744E52306314800E6D762;
+			remoteInfo = DesafioDs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1DC744E62306314800E6D762 /* DesafioDs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioDs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DC744E92306314800E6D762 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1DC744EA2306314800E6D762 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1DC744EC2306314800E6D762 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1DC744ED2306314800E6D762 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1DC744F02306314800E6D762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1DC744F32306314800E6D762 /* DesafioDs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DesafioDs.xcdatamodel; sourceTree = "<group>"; };
+		1DC744F52306314A00E6D762 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1DC744F82306314A00E6D762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1DC744FA2306314A00E6D762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DC744FB2306314A00E6D762 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1DC745012306314A00E6D762 /* DesafioDsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioDsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DC745052306314A00E6D762 /* DesafioDsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesafioDsTests.m; sourceTree = "<group>"; };
+		1DC745072306314A00E6D762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DC7450C2306314A00E6D762 /* DesafioDsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioDsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DC745102306314A00E6D762 /* DesafioDsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesafioDsUITests.m; sourceTree = "<group>"; };
+		1DC745122306314A00E6D762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DC744E32306314800E6D762 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DC744FE2306314A00E6D762 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DC745092306314A00E6D762 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DC744DD2306314800E6D762 = {
+			isa = PBXGroup;
+			children = (
+				1DC744E82306314800E6D762 /* DesafioDs */,
+				1DC745042306314A00E6D762 /* DesafioDsTests */,
+				1DC7450F2306314A00E6D762 /* DesafioDsUITests */,
+				1DC744E72306314800E6D762 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1DC744E72306314800E6D762 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DC744E62306314800E6D762 /* DesafioDs.app */,
+				1DC745012306314A00E6D762 /* DesafioDsTests.xctest */,
+				1DC7450C2306314A00E6D762 /* DesafioDsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DC744E82306314800E6D762 /* DesafioDs */ = {
+			isa = PBXGroup;
+			children = (
+				1DC744E92306314800E6D762 /* AppDelegate.h */,
+				1DC744EA2306314800E6D762 /* AppDelegate.m */,
+				1DC744EC2306314800E6D762 /* ViewController.h */,
+				1DC744ED2306314800E6D762 /* ViewController.m */,
+				1DC744EF2306314800E6D762 /* Main.storyboard */,
+				1DC744F52306314A00E6D762 /* Assets.xcassets */,
+				1DC744F72306314A00E6D762 /* LaunchScreen.storyboard */,
+				1DC744FA2306314A00E6D762 /* Info.plist */,
+				1DC744FB2306314A00E6D762 /* main.m */,
+				1DC744F22306314800E6D762 /* DesafioDs.xcdatamodeld */,
+			);
+			path = DesafioDs;
+			sourceTree = "<group>";
+		};
+		1DC745042306314A00E6D762 /* DesafioDsTests */ = {
+			isa = PBXGroup;
+			children = (
+				1DC745052306314A00E6D762 /* DesafioDsTests.m */,
+				1DC745072306314A00E6D762 /* Info.plist */,
+			);
+			path = DesafioDsTests;
+			sourceTree = "<group>";
+		};
+		1DC7450F2306314A00E6D762 /* DesafioDsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1DC745102306314A00E6D762 /* DesafioDsUITests.m */,
+				1DC745122306314A00E6D762 /* Info.plist */,
+			);
+			path = DesafioDsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DC744E52306314800E6D762 /* DesafioDs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DC745152306314A00E6D762 /* Build configuration list for PBXNativeTarget "DesafioDs" */;
+			buildPhases = (
+				1DC744E22306314800E6D762 /* Sources */,
+				1DC744E32306314800E6D762 /* Frameworks */,
+				1DC744E42306314800E6D762 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesafioDs;
+			productName = DesafioDs;
+			productReference = 1DC744E62306314800E6D762 /* DesafioDs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1DC745002306314A00E6D762 /* DesafioDsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DC745182306314A00E6D762 /* Build configuration list for PBXNativeTarget "DesafioDsTests" */;
+			buildPhases = (
+				1DC744FD2306314A00E6D762 /* Sources */,
+				1DC744FE2306314A00E6D762 /* Frameworks */,
+				1DC744FF2306314A00E6D762 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DC745032306314A00E6D762 /* PBXTargetDependency */,
+			);
+			name = DesafioDsTests;
+			productName = DesafioDsTests;
+			productReference = 1DC745012306314A00E6D762 /* DesafioDsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1DC7450B2306314A00E6D762 /* DesafioDsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DC7451B2306314A00E6D762 /* Build configuration list for PBXNativeTarget "DesafioDsUITests" */;
+			buildPhases = (
+				1DC745082306314A00E6D762 /* Sources */,
+				1DC745092306314A00E6D762 /* Frameworks */,
+				1DC7450A2306314A00E6D762 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DC7450E2306314A00E6D762 /* PBXTargetDependency */,
+			);
+			name = DesafioDsUITests;
+			productName = DesafioDsUITests;
+			productReference = 1DC7450C2306314A00E6D762 /* DesafioDsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DC744DE2306314800E6D762 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Sávio Berdine";
+				TargetAttributes = {
+					1DC744E52306314800E6D762 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					1DC745002306314A00E6D762 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 1DC744E52306314800E6D762;
+					};
+					1DC7450B2306314A00E6D762 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 1DC744E52306314800E6D762;
+					};
+				};
+			};
+			buildConfigurationList = 1DC744E12306314800E6D762 /* Build configuration list for PBXProject "DesafioDs" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1DC744DD2306314800E6D762;
+			productRefGroup = 1DC744E72306314800E6D762 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DC744E52306314800E6D762 /* DesafioDs */,
+				1DC745002306314A00E6D762 /* DesafioDsTests */,
+				1DC7450B2306314A00E6D762 /* DesafioDsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DC744E42306314800E6D762 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DC744F92306314A00E6D762 /* LaunchScreen.storyboard in Resources */,
+				1DC744F62306314A00E6D762 /* Assets.xcassets in Resources */,
+				1DC744F12306314800E6D762 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DC744FF2306314A00E6D762 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DC7450A2306314A00E6D762 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DC744E22306314800E6D762 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DC744EE2306314800E6D762 /* ViewController.m in Sources */,
+				1DC744EB2306314800E6D762 /* AppDelegate.m in Sources */,
+				1DC744FC2306314A00E6D762 /* main.m in Sources */,
+				1DC744F42306314800E6D762 /* DesafioDs.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DC744FD2306314A00E6D762 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DC745062306314A00E6D762 /* DesafioDsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DC745082306314A00E6D762 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DC745112306314A00E6D762 /* DesafioDsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DC745032306314A00E6D762 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DC744E52306314800E6D762 /* DesafioDs */;
+			targetProxy = 1DC745022306314A00E6D762 /* PBXContainerItemProxy */;
+		};
+		1DC7450E2306314A00E6D762 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DC744E52306314800E6D762 /* DesafioDs */;
+			targetProxy = 1DC7450D2306314A00E6D762 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1DC744EF2306314800E6D762 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DC744F02306314800E6D762 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1DC744F72306314A00E6D762 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DC744F82306314A00E6D762 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DC745132306314A00E6D762 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DC745142306314A00E6D762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DC745162306314A00E6D762 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7PFDZE6A86;
+				INFOPLIST_FILE = DesafioDs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = savio.berdine.DesafioDs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1DC745172306314A00E6D762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7PFDZE6A86;
+				INFOPLIST_FILE = DesafioDs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = savio.berdine.DesafioDs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1DC745192306314A00E6D762 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7PFDZE6A86;
+				INFOPLIST_FILE = DesafioDsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = savio.berdine.DesafioDsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioDs.app/DesafioDs";
+			};
+			name = Debug;
+		};
+		1DC7451A2306314A00E6D762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7PFDZE6A86;
+				INFOPLIST_FILE = DesafioDsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = savio.berdine.DesafioDsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioDs.app/DesafioDs";
+			};
+			name = Release;
+		};
+		1DC7451C2306314A00E6D762 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7PFDZE6A86;
+				INFOPLIST_FILE = DesafioDsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = savio.berdine.DesafioDsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DesafioDs;
+			};
+			name = Debug;
+		};
+		1DC7451D2306314A00E6D762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7PFDZE6A86;
+				INFOPLIST_FILE = DesafioDsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = savio.berdine.DesafioDsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DesafioDs;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DC744E12306314800E6D762 /* Build configuration list for PBXProject "DesafioDs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DC745132306314A00E6D762 /* Debug */,
+				1DC745142306314A00E6D762 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DC745152306314A00E6D762 /* Build configuration list for PBXNativeTarget "DesafioDs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DC745162306314A00E6D762 /* Debug */,
+				1DC745172306314A00E6D762 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DC745182306314A00E6D762 /* Build configuration list for PBXNativeTarget "DesafioDsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DC745192306314A00E6D762 /* Debug */,
+				1DC7451A2306314A00E6D762 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DC7451B2306314A00E6D762 /* Build configuration list for PBXNativeTarget "DesafioDsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DC7451C2306314A00E6D762 /* Debug */,
+				1DC7451D2306314A00E6D762 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1DC744F22306314800E6D762 /* DesafioDs.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1DC744F32306314800E6D762 /* DesafioDs.xcdatamodel */,
+			);
+			currentVersion = 1DC744F32306314800E6D762 /* DesafioDs.xcdatamodel */;
+			path = DesafioDs.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1DC744DE2306314800E6D762 /* Project object */;
+}
