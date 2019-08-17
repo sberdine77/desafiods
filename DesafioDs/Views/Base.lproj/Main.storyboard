@@ -164,6 +164,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kWX-Do-9ex"/>
                     </view>
+                    <connections>
+                        <outlet property="storeComplement" destination="cMw-mx-cET" id="MTX-ht-CQT"/>
+                        <outlet property="storeId" destination="y7p-8e-YnP" id="oGc-1O-4rX"/>
+                        <outlet property="storeImage" destination="cRd-Ah-g5q" id="uce-ty-mnX"/>
+                        <outlet property="storeName" destination="4nf-6q-NYa" id="jmO-qm-5fn"/>
+                        <outlet property="storeNumber" destination="5FM-Rn-Zdw" id="RjQ-6C-xcP"/>
+                        <outlet property="storePhone" destination="O1Z-Ts-PHB" id="dii-sO-oHv"/>
+                        <outlet property="storeStreet" destination="MdJ-zT-cph" id="1PR-x0-ZLG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHK-zv-Ss9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

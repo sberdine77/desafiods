@@ -19,7 +19,7 @@
     }
     
     if (addressDictionary[@"numero"] == nil) {
-        self.number = [[NSNumber alloc] initWithInt:0];
+        self.number = @"";
         NSLog(@"Address has no number");
     } else {
         self.number = addressDictionary[@"numero"];

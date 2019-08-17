@@ -12,7 +12,7 @@
 
 -(Store*) initStoreWithDictionary:(NSDictionary *)storeDictionary {
     if (storeDictionary[@"id"] == nil) {
-        self.storeId = [[NSNumber alloc] initWithInt:0];
+        self.storeId = @"";
         NSLog(@"Store has no id.");
     } else {
         self.storeId = storeDictionary[@"id"];
