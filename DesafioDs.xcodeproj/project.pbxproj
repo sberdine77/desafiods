@@ -109,16 +109,12 @@
 		1DC744E82306314800E6D762 /* DesafioDs */ = {
 			isa = PBXGroup;
 			children = (
+				1DC7452E2307A0BE00E6D762 /* Views */,
 				1DC7451F23063F1F00E6D762 /* Models */,
-				1DC7451E23063F1500E6D762 /* Gui */,
-				1DC744E92306314800E6D762 /* AppDelegate.h */,
-				1DC744EA2306314800E6D762 /* AppDelegate.m */,
-				1DC744EF2306314800E6D762 /* Main.storyboard */,
+				1DC7451E23063F1500E6D762 /* Controlers */,
 				1DC744F52306314A00E6D762 /* Assets.xcassets */,
-				1DC744F72306314A00E6D762 /* LaunchScreen.storyboard */,
 				1DC744FA2306314A00E6D762 /* Info.plist */,
 				1DC744FB2306314A00E6D762 /* main.m */,
-				1DC744F22306314800E6D762 /* DesafioDs.xcdatamodeld */,
 			);
 			path = DesafioDs;
 			sourceTree = "<group>";
@@ -141,18 +137,20 @@
 			path = DesafioDsUITests;
 			sourceTree = "<group>";
 		};
-		1DC7451E23063F1500E6D762 /* Gui */ = {
+		1DC7451E23063F1500E6D762 /* Controlers */ = {
 			isa = PBXGroup;
 			children = (
+				1DC744E92306314800E6D762 /* AppDelegate.h */,
+				1DC744EA2306314800E6D762 /* AppDelegate.m */,
 				1DC7452A23078BCA00E6D762 /* ViewControllers */,
-				1DC7452023078AC700E6D762 /* TableViewCells */,
 			);
-			path = Gui;
+			path = Controlers;
 			sourceTree = "<group>";
 		};
 		1DC7451F23063F1F00E6D762 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1DC744F22306314800E6D762 /* DesafioDs.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,6 +173,16 @@
 				1DC7452C2307938E00E6D762 /* DetailsViewController.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1DC7452E2307A0BE00E6D762 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1DC744F72306314A00E6D762 /* LaunchScreen.storyboard */,
+				1DC744EF2306314800E6D762 /* Main.storyboard */,
+				1DC7452023078AC700E6D762 /* TableViewCells */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
