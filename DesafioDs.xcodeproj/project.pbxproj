@@ -16,6 +16,8 @@
 		1DC744FC2306314A00E6D762 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC744FB2306314A00E6D762 /* main.m */; };
 		1DC745062306314A00E6D762 /* DesafioDsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC745052306314A00E6D762 /* DesafioDsTests.m */; };
 		1DC745112306314A00E6D762 /* DesafioDsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC745102306314A00E6D762 /* DesafioDsUITests.m */; };
+		1DC7452923078BAD00E6D762 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7452823078BAD00E6D762 /* MainTableViewCell.m */; };
+		1DC7452D2307938E00E6D762 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7452C2307938E00E6D762 /* DetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		1DC7450C2306314A00E6D762 /* DesafioDsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioDsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DC745102306314A00E6D762 /* DesafioDsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesafioDsUITests.m; sourceTree = "<group>"; };
 		1DC745122306314A00E6D762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DC7452723078BAD00E6D762 /* MainTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
+		1DC7452823078BAD00E6D762 /* MainTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
+		1DC7452B2307938E00E6D762 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		1DC7452C2307938E00E6D762 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +109,10 @@
 		1DC744E82306314800E6D762 /* DesafioDs */ = {
 			isa = PBXGroup;
 			children = (
+				1DC7451F23063F1F00E6D762 /* Models */,
+				1DC7451E23063F1500E6D762 /* Gui */,
 				1DC744E92306314800E6D762 /* AppDelegate.h */,
 				1DC744EA2306314800E6D762 /* AppDelegate.m */,
-				1DC744EC2306314800E6D762 /* ViewController.h */,
-				1DC744ED2306314800E6D762 /* ViewController.m */,
 				1DC744EF2306314800E6D762 /* Main.storyboard */,
 				1DC744F52306314A00E6D762 /* Assets.xcassets */,
 				1DC744F72306314A00E6D762 /* LaunchScreen.storyboard */,
@@ -133,6 +139,42 @@
 				1DC745122306314A00E6D762 /* Info.plist */,
 			);
 			path = DesafioDsUITests;
+			sourceTree = "<group>";
+		};
+		1DC7451E23063F1500E6D762 /* Gui */ = {
+			isa = PBXGroup;
+			children = (
+				1DC7452A23078BCA00E6D762 /* ViewControllers */,
+				1DC7452023078AC700E6D762 /* TableViewCells */,
+			);
+			path = Gui;
+			sourceTree = "<group>";
+		};
+		1DC7451F23063F1F00E6D762 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1DC7452023078AC700E6D762 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1DC7452723078BAD00E6D762 /* MainTableViewCell.h */,
+				1DC7452823078BAD00E6D762 /* MainTableViewCell.m */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		1DC7452A23078BCA00E6D762 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1DC744EC2306314800E6D762 /* ViewController.h */,
+				1DC744ED2306314800E6D762 /* ViewController.m */,
+				1DC7452B2307938E00E6D762 /* DetailsViewController.h */,
+				1DC7452C2307938E00E6D762 /* DetailsViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +310,9 @@
 				1DC744EE2306314800E6D762 /* ViewController.m in Sources */,
 				1DC744EB2306314800E6D762 /* AppDelegate.m in Sources */,
 				1DC744FC2306314A00E6D762 /* main.m in Sources */,
+				1DC7452D2307938E00E6D762 /* DetailsViewController.m in Sources */,
 				1DC744F42306314800E6D762 /* DesafioDs.xcdatamodeld in Sources */,
+				1DC7452923078BAD00E6D762 /* MainTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
