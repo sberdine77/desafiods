@@ -32,7 +32,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="aJp-w1-M8q" kind="show" id="EIa-tT-ScJ"/>
+                                    <segue destination="aJp-w1-M8q" kind="show" identifier="detailsSegue" id="EIa-tT-ScJ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -50,7 +50,6 @@
         <!--Details View Controller-->
         <scene sceneID="9rD-Sz-RiW">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gHK-zv-Ss9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="aJp-w1-M8q" customClass="DetailsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vxs-Rc-fUf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -165,7 +164,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kWX-Do-9ex"/>
                     </view>
+                    <connections>
+                        <outlet property="storeComplement" destination="cMw-mx-cET" id="MTX-ht-CQT"/>
+                        <outlet property="storeId" destination="y7p-8e-YnP" id="oGc-1O-4rX"/>
+                        <outlet property="storeImage" destination="cRd-Ah-g5q" id="uce-ty-mnX"/>
+                        <outlet property="storeName" destination="4nf-6q-NYa" id="jmO-qm-5fn"/>
+                        <outlet property="storeNumber" destination="5FM-Rn-Zdw" id="RjQ-6C-xcP"/>
+                        <outlet property="storePhone" destination="O1Z-Ts-PHB" id="dii-sO-oHv"/>
+                        <outlet property="storeStreet" destination="MdJ-zT-cph" id="1PR-x0-ZLG"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gHK-zv-Ss9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="382.5" y="-190.14084507042253"/>
         </scene>

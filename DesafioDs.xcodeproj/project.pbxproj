@@ -18,6 +18,9 @@
 		1DC745112306314A00E6D762 /* DesafioDsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC745102306314A00E6D762 /* DesafioDsUITests.m */; };
 		1DC7452923078BAD00E6D762 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7452823078BAD00E6D762 /* MainTableViewCell.m */; };
 		1DC7452D2307938E00E6D762 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7452C2307938E00E6D762 /* DetailsViewController.m */; };
+		1DC745312307A33700E6D762 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC745302307A33700E6D762 /* Store.m */; };
+		1DC745342307A54B00E6D762 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC745332307A54B00E6D762 /* Address.m */; };
+		1DC745392307A92F00E6D762 /* StoreRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC745382307A92F00E6D762 /* StoreRepository.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,12 @@
 		1DC7452823078BAD00E6D762 /* MainTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
 		1DC7452B2307938E00E6D762 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		1DC7452C2307938E00E6D762 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		1DC7452F2307A33700E6D762 /* Store.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
+		1DC745302307A33700E6D762 /* Store.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
+		1DC745322307A54B00E6D762 /* Address.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
+		1DC745332307A54B00E6D762 /* Address.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
+		1DC745372307A92F00E6D762 /* StoreRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreRepository.h; sourceTree = "<group>"; };
+		1DC745382307A92F00E6D762 /* StoreRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreRepository.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +159,8 @@
 		1DC7451F23063F1F00E6D762 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1DC745362307A8D300E6D762 /* Repository */,
+				1DC745352307A8C900E6D762 /* Data */,
 				1DC744F22306314800E6D762 /* DesafioDs.xcdatamodeld */,
 			);
 			path = Models;
@@ -183,6 +194,26 @@
 				1DC7452023078AC700E6D762 /* TableViewCells */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		1DC745352307A8C900E6D762 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1DC7452F2307A33700E6D762 /* Store.h */,
+				1DC745302307A33700E6D762 /* Store.m */,
+				1DC745322307A54B00E6D762 /* Address.h */,
+				1DC745332307A54B00E6D762 /* Address.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1DC745362307A8D300E6D762 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				1DC745372307A92F00E6D762 /* StoreRepository.h */,
+				1DC745382307A92F00E6D762 /* StoreRepository.m */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,7 +348,10 @@
 			files = (
 				1DC744EE2306314800E6D762 /* ViewController.m in Sources */,
 				1DC744EB2306314800E6D762 /* AppDelegate.m in Sources */,
+				1DC745342307A54B00E6D762 /* Address.m in Sources */,
 				1DC744FC2306314A00E6D762 /* main.m in Sources */,
+				1DC745392307A92F00E6D762 /* StoreRepository.m in Sources */,
+				1DC745312307A33700E6D762 /* Store.m in Sources */,
 				1DC7452D2307938E00E6D762 /* DetailsViewController.m in Sources */,
 				1DC744F42306314800E6D762 /* DesafioDs.xcdatamodeld in Sources */,
 				1DC7452923078BAD00E6D762 /* MainTableViewCell.m in Sources */,

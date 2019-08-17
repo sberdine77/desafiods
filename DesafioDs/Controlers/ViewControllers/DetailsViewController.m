@@ -17,16 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBar.prefersLargeTitles = NO;
+    self.storeId.text = self.store.storeId;
+    self.storeName.text = self.store.name;
+    self.storePhone.text = self.store.phone;
+    self.storeStreet.text = self.store.address.street;
+    self.storeNumber.text = self.store.address.number;
+    self.storeComplement.text = self.store.address.complement;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

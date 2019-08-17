@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StoreRepository.h"
 
 @interface ViewController : UITableViewController
+
+@property StoreRepository *storeRepo;
 
 @end
 
