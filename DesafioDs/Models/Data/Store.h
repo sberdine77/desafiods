@@ -14,12 +14,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Store : NSObject
 
-@property NSNumber *id;
+@property NSNumber *storeId;
 @property NSString *name;
 @property Address *address;
 @property UIImage *image;
+@property NSString *phone;
 
--(Store*) initStoreWithId: (NSNumber*)id andName: (NSString*)name andAddress: (Address*)address andImage: (UIImage*)image;
+-(Store*) initStoreWithId: (NSNumber*)storeId andName: (NSString*)name andAddress: (Address*)address andImage: (UIImage*)image andPhone: (NSString*)phone;
+
+-(Store*) initStoreWithDictionary: (NSDictionary*) storeDictionary;
 
 @end
 

@@ -14,9 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property NSString *street;
 @property NSNumber *number;
+@property NSString *neighborhood;
 @property NSString *complement;
 
--(Address*) initAddressWithStreet: (NSString*)street andNumber: (NSNumber*)number andComplement: (NSString*) complement;
+-(Address*) initAddressWithStreet: (NSString*)street andNumber: (NSNumber*)number andNeighborhood: (NSString*)neighborhood andComplement: (NSString*) complement;
+
+-(Address*) initAddressWithDictionary: (NSDictionary*) addressDictionary;
 
 @end
 

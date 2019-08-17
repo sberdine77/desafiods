@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MainTableViewCell.h"
+#import "DetailsViewController.h"
 
 @interface ViewController ()
 
@@ -17,21 +18,42 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.storeRepo = [[StoreRepository alloc] initFromViewController:self];
+    
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     self.navigationItem.title = @"Lojas";
     self.navigationController.navigationBar.prefersLargeTitles = YES;
+    [self.storeRepo getAllStores];
 }
 
+-(void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    if ([keyPath isEqualToString:@"observer"]) {
+        NSLog(@"Observer triggered");
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
+        //[self removeObserver:self forKeyPath:@"observer" context:nil];
+    }
+}
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     MainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId" forIndexPath:indexPath];
-    cell.textLabel.text = @"Opa, testando";
+    cell.textLabel.text = self.storeRepo.storesArray[indexPath.row].name;
     return cell;
 }
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return self.storeRepo.storesArray.count;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"detailsSegue"]) {
+        DetailsViewController *detailsVc = (DetailsViewController*) segue.destinationViewController;
+        NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
+        detailsVc.store = self.storeRepo.storesArray[indexPath.row];
+    }
 }
 
 @end

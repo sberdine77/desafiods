@@ -7,14 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Store.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface StoreRepository : NSObject
 
-@property NSMutableArray *storesArray;
+@property (nonatomic, strong) NSMutableArray<Store *> *storesArray;
+@property (nonatomic, strong) NSString *observer;
+@property NSString *allStoresUrl;
+@property UIViewController *vc;
 
--(NSMutableArray*) getAllStores;
+-(StoreRepository*) initFromViewController: (UIViewController*) vc;
+
+-(void) getAllStores;
 
 @end
 
