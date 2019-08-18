@@ -40,7 +40,11 @@
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     MainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId" forIndexPath:indexPath];
+    if (!cell) {
+        cell = [[MainTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellId"];
+    }
     cell.textLabel.text = self.storeRepo.storesArray[indexPath.row].name;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Id: %@", self.storeRepo.storesArray[indexPath.row].storeId];
     return cell;
 }
 

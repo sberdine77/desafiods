@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Store.h"
+#import <Photos/Photos.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -21,6 +22,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *storeStreet;
 @property (weak, nonatomic) IBOutlet UILabel *storeNumber;
 @property (weak, nonatomic) IBOutlet UILabel *storeComplement;
+@property UIImagePickerController* imagePicker;
+
+-(void) askForUserAutorisationOnCameraAndLibrary;
+-(void) showAllert;
+-(void) getImageFromSource: (UIImagePickerControllerSourceType) sourceType;
 
 @end
 

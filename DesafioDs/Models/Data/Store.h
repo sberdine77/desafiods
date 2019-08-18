@@ -20,9 +20,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property UIImage *image;
 @property NSString *phone;
 
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
 -(Store*) initStoreWithId: (NSString*)storeId andName: (NSString*)name andAddress: (Address*)address andImage: (UIImage*)image andPhone: (NSString*)phone;
 
 -(Store*) initStoreWithDictionary: (NSDictionary*) storeDictionary;
+
+-(void) saveStoreImage;
+-(UIImage *) fetchStoreImage;
 
 @end
 

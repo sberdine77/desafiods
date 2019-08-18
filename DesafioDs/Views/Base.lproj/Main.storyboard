@@ -115,7 +115,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cRd-Ah-g5q">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="letter_L" translatesAutoresizingMaskIntoConstraints="NO" id="cRd-Ah-g5q">
                                 <rect key="frame" x="96" y="95" width="128" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="C0I-1o-zKb"/>
@@ -195,4 +195,7 @@
             <point key="canvasLocation" x="-1277" y="-195"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="letter_L" width="512" height="512"/>
+    </resources>
 </document>

@@ -15,6 +15,8 @@
 
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 
+@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
 - (void)saveContext;
 
 

@@ -12,6 +12,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    [self initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellId"];
     // Initialization code
 }
 
