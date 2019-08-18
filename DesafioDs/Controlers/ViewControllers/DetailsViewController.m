@@ -18,6 +18,7 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.prefersLargeTitles = NO;
     self.imagePicker = [[UIImagePickerController alloc] init];
+    self.imagePicker.delegate = self;
     self.storeId.text = self.store.storeId;
     self.storeName.text = self.store.name;
     self.storePhone.text = self.store.phone;
@@ -31,7 +32,6 @@
     singleTap.numberOfTapsRequired = 1;
     [self.storeImage setUserInteractionEnabled:YES];
     [self.storeImage addGestureRecognizer:singleTap];
-    
 }
 
 -(void) showAllert {
@@ -43,6 +43,13 @@
         [self getImageFromSource:UIImagePickerControllerSourceTypePhotoLibrary];
     }]];
     [pickerAlert addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault handler:nil]];
+    [pickerAlert setModalPresentationStyle:UIModalPresentationPopover];
+    
+    UIPopoverPresentationController *popPresenter = [pickerAlert
+                                                     popoverPresentationController];
+    popPresenter.sourceView = self.storeImage;
+    popPresenter.sourceRect = self.storeImage.bounds;
+    
     [self presentViewController:pickerAlert animated:YES completion:nil];
 }
 

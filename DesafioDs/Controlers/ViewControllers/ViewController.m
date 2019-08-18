@@ -26,6 +26,15 @@
     self.navigationItem.title = @"Lojas";
     self.navigationController.navigationBar.prefersLargeTitles = YES;
     [self.storeRepo getAllStores];
+    
+    self.loadingAlert = [UIAlertController alertControllerWithTitle:@"Aguarde..." message:nil preferredStyle:UIAlertControllerStyleAlert];
+    CGRect rect = CGRectMake(10, 5, 50, 50);
+    UIActivityIndicatorView *loadingIndicator = [[UIActivityIndicatorView alloc] initWithFrame:rect];
+    loadingIndicator.hidesWhenStopped = YES;
+    loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+    [loadingIndicator startAnimating];
+    [self.loadingAlert.view addSubview:loadingIndicator];
+    [self presentViewController:self.loadingAlert animated:YES completion:nil];
 }
 
 -(void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
@@ -33,6 +42,7 @@
         NSLog(@"Observer triggered");
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.tableView reloadData];
+            [self.loadingAlert dismissViewControllerAnimated:YES completion:nil];
         });
         //[self removeObserver:self forKeyPath:@"observer" context:nil];
     }

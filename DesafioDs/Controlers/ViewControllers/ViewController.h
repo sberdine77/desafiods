@@ -12,6 +12,7 @@
 @interface ViewController : UITableViewController
 
 @property StoreRepository *storeRepo;
+@property UIAlertController *loadingAlert;
 
 @end
 

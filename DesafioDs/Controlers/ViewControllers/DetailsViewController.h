@@ -23,8 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *storeNumber;
 @property (weak, nonatomic) IBOutlet UILabel *storeComplement;
 @property UIImagePickerController* imagePicker;
+@property UIAlertController *loadingAlert;
 
--(void) askForUserAutorisationOnCameraAndLibrary;
 -(void) showAllert;
 -(void) getImageFromSource: (UIImagePickerControllerSourceType) sourceType;
 
