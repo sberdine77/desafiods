@@ -114,4 +114,21 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (IBAction)callToStore:(id)sender {
+    NSString *tel = @"tel:";
+    NSString *number = [[[[self.store.phone stringByReplacingOccurrencesOfString:@"(" withString:@""] stringByReplacingOccurrencesOfString:@")" withString:@""] stringByReplacingOccurrencesOfString:@" " withString:@""] stringByReplacingOccurrencesOfString:@"-" withString:@""];
+    NSString *stringToCall = [tel stringByAppendingString:number];
+    //NSLog(stringToCall);
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:stringToCall] options:@{} completionHandler:nil];
+}
+
+- (IBAction)openMapsToStoreAddress:(id)sender {
+    
+    NSString *address = [[[self.store.address.street stringByAppendingString:self.store.address.number] stringByAppendingString:self.store.address.complement] stringByAppendingString:self.store.address.complement];
+    
+    NSString *url = [NSString stringWithFormat:@"comgooglemaps://?daddr=%@&directionsmode=driving", [address stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLPathAllowedCharacterSet]]];
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: url] options:@{} completionHandler:nil];
+}
+
 @end
