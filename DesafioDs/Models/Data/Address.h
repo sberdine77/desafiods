@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/*Class responsible for modeling Adress data type. It's easier to deal with modular data models on constructing new stores or executing operations with them*/
 @interface Address : NSObject
 
 @property NSString *street;
@@ -17,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSString *neighborhood;
 @property NSString *complement;
 
+/*Construct the addres with a compatible dictionary. {logradouro: "", numero: "", bairro: "", complemento: ""}*/
 -(Address*) initAddressWithDictionary: (NSDictionary*) addressDictionary;
 
 @end

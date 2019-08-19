@@ -11,6 +11,7 @@
 @implementation Address
 
 -(Address*) initAddressWithDictionary: (NSDictionary*) addressDictionary {
+    //Check if the given dictionary has an "logradouro" field
     if (addressDictionary[@"logradouro"] == nil) {
         self.street = @"";
         NSLog(@"Address has no street");
@@ -18,6 +19,7 @@
         self.street = addressDictionary[@"logradouro"];
     }
     
+    //Check if the given dictionary has an "numero" field
     if (addressDictionary[@"numero"] == nil) {
         self.number = @"";
         NSLog(@"Address has no number");
@@ -25,6 +27,7 @@
         self.number = addressDictionary[@"numero"];
     }
     
+    //Check if the given dictionary has an "bairro" field
     if (addressDictionary[@"bairro"] == nil) {
         self.neighborhood = @"";
         NSLog(@"Address has no neighborhood");
@@ -32,6 +35,7 @@
         self.neighborhood = addressDictionary[@"bairro"];
     }
     
+    //Check if the given dictionary has an "complemento" field
     if (addressDictionary[@"complemento"] == nil) {
         self.complement = @"";
         NSLog(@"Address has no complement");

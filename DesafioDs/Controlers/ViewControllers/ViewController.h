@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "StoreRepository.h"
 
+/*Main view controller. This is a TableViewController.*/
 @interface ViewController : UITableViewController
 
 @property StoreRepository *storeRepo;

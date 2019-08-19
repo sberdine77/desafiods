@@ -12,6 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/*Class responsible form modeling a store. Besides the store properties, this class includes methods to save and fetch the store image on local memory.*/
 @interface Store : NSObject
 
 @property NSString *storeId;
@@ -22,9 +23,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
+/*Init store with a compatible dictionary. {lojas:[{id: "", endereco: {logradouro: "", numero: "", bairro: "", complemento: ""}, nome: "", telefone: ""]}*/
 -(Store*) initStoreWithDictionary: (NSDictionary*) storeDictionary;
 
+/*Save store image on local memory (linked by storeId)*/
 -(void) saveStoreImage;
+
+/*Fetch the store image from local memory*/
 -(UIImage *) fetchStoreImage;
 
 @end

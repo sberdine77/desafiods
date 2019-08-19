@@ -12,8 +12,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    //Configuring cell with subtitle (details) style
     [self initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellId"];
-    // Initialization code
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
