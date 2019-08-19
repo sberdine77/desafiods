@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/*Class responsible for the main tableview cell properties and behaviours*/
 @interface MainTableViewCell : UITableViewCell
 
 @end

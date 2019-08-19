@@ -23,11 +23,15 @@
     self.storesArray = [[NSMutableArray alloc] init];
     [self addObserver:self.vc forKeyPath:@"observer" options:NSKeyValueObservingOptionNew context:nil];
     
+    //API request:
 [[NSURLSession.sharedSession dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         NSLog(@"Stores fetched from api...");
     
+    //Cast the data returned to JSON format
     NSString *json = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     NSData *jsonData = [json dataUsingEncoding:NSASCIIStringEncoding];
+    
+    //Serialize JSON to NSDictonary
     NSError *err;
     NSDictionary *dataReturned = [NSJSONSerialization JSONObjectWithData:jsonData options: NSJSONReadingAllowFragments error:&err];
 
@@ -36,13 +40,18 @@
         return;
     }
     
-    //NSLog(@"Data returned: %@" ,dataReturned);
-    
     if (dataReturned[@"lojas"] == nil) {
         NSLog(@"There is no store in api.");
         return;
     }
+    
+    //Catch the dictionary of stores on the "lojas" key
     NSDictionary *storesDic = dataReturned[@"lojas"];
+    if (storesDic == nil) {
+        NSLog(@"Data malformed");
+    }
+    
+    //Add fetched stores to the storesArray
     for (NSDictionary *dic in storesDic) {
         Store *singleStore = [[Store alloc] initStoreWithDictionary:dic];
         [self.storesArray addObject:singleStore];
