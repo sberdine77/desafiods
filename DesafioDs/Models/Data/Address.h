@@ -21,6 +21,10 @@ NS_ASSUME_NONNULL_BEGIN
 /*Construct the addres with a compatible dictionary. {logradouro: "", numero: "", bairro: "", complemento: ""}*/
 -(Address*) initAddressWithDictionary: (NSDictionary*) addressDictionary;
 
+/*Init address directely with strings*/
+-(Address*) initAddressWithStreet: (NSString*) street andNumber: (NSString*) number andNeighborhood: (NSString*) neighborhood andComplement: (NSString*) complement;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

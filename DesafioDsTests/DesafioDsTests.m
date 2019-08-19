@@ -7,15 +7,19 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "Address.h"
 
 @interface DesafioDsTests : XCTestCase
+
+@property (nonatomic) Address *addressInstanceToTest;
 
 @end
 
 @implementation DesafioDsTests
 
 - (void)setUp {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    [super setUp];
+    self.addressInstanceToTest = [[Address alloc] init];
 }
 
 - (void)tearDown {
@@ -25,6 +29,15 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+}
+
+-(void)testInitAddressWithSemiEmptyDictionary {
+    NSDictionary *dic = @{@"logradouro": @"rua"};
+    Address *outAddress = [self.addressInstanceToTest initAddressWithDictionary:dic];
+    Address *expectedAddress = [[Address alloc] initAddressWithStreet:@"rua" andNumber:@"" andNeighborhood:@"" andComplement:@""];
+    
+    XCTAssertEqual(expectedAddress.street, outAddress.street, @"The address created with empty dictionary was not initialized correctly (with empty strings)");
+    
 }
 
 - (void)testPerformanceExample {
