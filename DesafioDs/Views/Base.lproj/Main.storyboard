@@ -131,6 +131,9 @@
                                         <state key="normal" title="Editar">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="editImageButton:" destination="aJp-w1-M8q" eventType="touchUpInside" id="eJT-ER-MIf"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="83948372894" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMw-mx-cET">
                                         <rect key="frame" x="149.5" y="386" width="123" height="20.5"/>

@@ -99,6 +99,10 @@
     }
 }
 
+- (IBAction)editImageButton:(id)sender {
+    [self showCameraOrLibraryAllert];
+}
+
 -(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *)info {
     //Sve the store image to the local memory
     UIImage * chosenImage = info[UIImagePickerControllerOriginalImage];
